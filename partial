@@ -1,0 +1,17 @@
+	
+	private static boolean helper (PartialTree n, Vertex t){
+    	Iterator<Arc> it =  n.getArcs().iterator();
+    	
+    	while(it.hasNext()){
+    		Arc v = it.next();
+    		Vertex c = v.v1;
+    		
+    		if(t.equals(c)){
+    			return true; 
+    			
+    		}
+    		
+    	}
+    	
+		return false; 	
+    }	
